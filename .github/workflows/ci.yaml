@@ -34,4 +34,4 @@ jobs:
             cd ~/testbot
             git pull
             npm install
-            npm run build && npm run start
+            npm run build
