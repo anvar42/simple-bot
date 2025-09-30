@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var telegraf_1 = require("telegraf");
+var bot_1 = require("./bot");
+var config_1 = require("./config");
+var TOKEN = (0, config_1.appConfig)().TOKEN;
+var botInstance = new telegraf_1.Telegraf(TOKEN);
+(0, bot_1.default)(botInstance);
+botInstance.launch().then();
+console.log('✅ Bot ishga tushdi!');
