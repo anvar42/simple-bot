@@ -7,8 +7,6 @@ const { TOKEN } = appConfig();
 const botInstance = new Telegraf(TOKEN);
 bot(botInstance);
 
-console.log('Bot ishga tushmoqda...');
+botInstance.launch().then();
 
-botInstance.launch().then(() => {
-  console.log('✅ Bot ishga tushdi!');
-});
+console.log('✅ Bot ishga tushdi!');
