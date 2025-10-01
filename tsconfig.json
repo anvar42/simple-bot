@@ -4,15 +4,11 @@
         "outDir": "dist",
         "rootDir": ".",
         "allowSyntheticDefaultImports": true,
-        "baseUrl": "./src",
-        "target": "esnext",
-        "module": "esnext",
-        "moduleResolution": "node",
+        "module": "commonjs",
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "skipLibCheck": true,
         "resolveJsonModule": true,
-        "types": ["node"]
     },
     "include": ["src"],
     "exclude": ["node_modules", "dist"]
